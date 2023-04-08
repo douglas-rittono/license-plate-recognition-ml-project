@@ -1,0 +1,1 @@
+Project to develop a application to recognize values from license plate (Brazilian) using ML to the post graduation conclusion.
