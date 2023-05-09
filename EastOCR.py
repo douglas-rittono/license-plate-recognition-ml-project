@@ -24,7 +24,7 @@ ap.add_argument("-e", "--height", type=int, default=320,
 	help="resized image height (should be multiple of 32)")
 args = vars(ap.parse_args())
 
-image = cv2.imread("Images\Placa-Mercosul-ABC1B34.jpg")
+image = cv2.imread("Images\Placa-Mercosul-POX4G21.jpg")
 
 # image height and width should be multiple of 32
 imgWidth=320
@@ -197,7 +197,7 @@ for ((start_X, start_Y, end_X, end_Y), text) in results:
 	# Displaying text
 	text = "".join([x if ord(x) < 128 else "" for x in text]).strip()
 	cv2.rectangle(orig_image, (start_X, start_Y), (end_X, end_Y),
-		(0, 0, 255), 2)
+		(0, 0, 255), 200)
 	cv2.putText(orig_image, text, (start_X, start_Y - 30),
 		cv2.FONT_HERSHEY_SIMPLEX, 0.7,(0,0, 255), 2)
 
